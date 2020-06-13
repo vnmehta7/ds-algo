@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 
 import java.util.Arrays;
 
-public class BubbleSortSortedTest extends AbstractSortedTest {
+public class BubbleSortTest extends AbstractSortTest {
 
     @DisplayName("Execution of bubble sort ascending test")
     @Test

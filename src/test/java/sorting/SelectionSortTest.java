@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 
 import java.util.Arrays;
 
-public class SelectionSortSortedTest extends AbstractSortedTest {
+public class SelectionSortTest extends AbstractSortTest {
 
     @DisplayName("Execution of selection sort ascending test")
     @Test

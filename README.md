@@ -3,6 +3,12 @@
     - Bubble sort
         -   Time complexity - O(n2)
         -   Stable algo
+        -   In-place algo
     - Selection sort
         -   Time complexity - O(n2)
         -   Unstable algo
+        -   In-place algo
+    - Insertion sort
+        -   Time complexity - O(n2)
+        -   Stable algo
+        -   In-place algo
