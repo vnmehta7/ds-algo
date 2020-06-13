@@ -11,7 +11,7 @@ public class InsertionSortTest extends AbstractSortTest {
     @Test
     public void testSortAscending() {
         InsertionSort insertionSort = new InsertionSort();
-        int[] sortedAscendingArrActual = insertionSort.sortAscending(new int[]{23, -21, 11, 9, 32, 9});
+        int[] sortedAscendingArrActual = insertionSort.sortAscending(inputUnsortedArray);
         Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
     }
 
@@ -19,7 +19,7 @@ public class InsertionSortTest extends AbstractSortTest {
     @Test
     public void testSortDescending() {
         InsertionSort insertionSort = new InsertionSort();
-        int[] sortedDescendingArrActual = insertionSort.sortDescending(new int[]{23, -21, 11, 9, 32, 9});
+        int[] sortedDescendingArrActual = insertionSort.sortDescending(inputUnsortedArray);
         Assert.assertTrue(Arrays.equals(sortedDescendingArrActual, sortedDescendingArrExpected));
     }
 }

@@ -12,7 +12,7 @@ public class SelectionSortTest extends AbstractSortTest {
     @Test
     public void testSortAscending() {
         SelectionSort selectionSort = new SelectionSort();
-        int[] sortedAscendingArrActual = selectionSort.sortAscending(new int[]{23, -21, 11, 9, 32, 9});
+        int[] sortedAscendingArrActual = selectionSort.sortAscending(inputUnsortedArray);
         Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
     }
 
@@ -20,7 +20,7 @@ public class SelectionSortTest extends AbstractSortTest {
     @Test
     public void testSortDescending() {
         SelectionSort selectionSort = new SelectionSort();
-        int[] sortedDescendingArrActual = selectionSort.sortDescending(new int[]{23, -21, 11, 9, 32, 9});
+        int[] sortedDescendingArrActual = selectionSort.sortDescending(inputUnsortedArray);
         Assert.assertTrue(Arrays.equals(sortedDescendingArrActual, sortedDescendingArrExpected));
     }
 }

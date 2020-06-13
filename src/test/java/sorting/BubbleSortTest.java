@@ -13,7 +13,7 @@ public class BubbleSortTest extends AbstractSortTest {
     @Test
     public void testSortAscending() {
         BubbleSort bubbleSort = new BubbleSort();
-        int[] sortedAscendingArrActual = bubbleSort.sortAscending(new int[]{23, -21, 11, 9, 32, 9});
+        int[] sortedAscendingArrActual = bubbleSort.sortAscending(inputUnsortedArray);
         Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
     }
 
@@ -21,7 +21,7 @@ public class BubbleSortTest extends AbstractSortTest {
     @Test
     public void testSortDescending() {
         BubbleSort bubbleSort = new BubbleSort();
-        int[] sortedDescendingArrActual = bubbleSort.sortDescending(new int[]{23, -21, 11, 9, 32, 9});
+        int[] sortedDescendingArrActual = bubbleSort.sortDescending(inputUnsortedArray);
         Assert.assertTrue(Arrays.equals(sortedDescendingArrActual, sortedDescendingArrExpected));
     }
 }
