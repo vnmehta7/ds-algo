@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import java.util.Arrays;
 
 public class InsertionSortTest extends AbstractSortTest {
-    @DisplayName("Execution of insertion sort ascending test")
+    @DisplayName("Execution of Insertion sort ascending test")
     @Test
     public void testSortAscending() {
         InsertionSort insertionSort = new InsertionSort();
@@ -15,7 +15,7 @@ public class InsertionSortTest extends AbstractSortTest {
         Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
     }
 
-    @DisplayName("Execution of insertion sort descending test")
+    @DisplayName("Execution of Insertion sort descending test")
     @Test
     public void testSortDescending() {
         InsertionSort insertionSort = new InsertionSort();

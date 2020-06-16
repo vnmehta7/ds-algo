@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class SelectionSortTest extends AbstractSortTest {
 
-    @DisplayName("Execution of selection sort ascending test")
+    @DisplayName("Execution of Selection sort ascending test")
     @Test
     public void testSortAscending() {
         SelectionSort selectionSort = new SelectionSort();
@@ -16,7 +16,7 @@ public class SelectionSortTest extends AbstractSortTest {
         Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
     }
 
-    @DisplayName("Execution of selection sort descending test")
+    @DisplayName("Execution of Selection sort descending test")
     @Test
     public void testSortDescending() {
         SelectionSort selectionSort = new SelectionSort();

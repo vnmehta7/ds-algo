@@ -1,5 +1,6 @@
 package sorting;
 
+
 public class SelectionSort {
 
     public int[] sortAscending(int[] inputArr) {

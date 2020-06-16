@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class BubbleSortTest extends AbstractSortTest {
 
-    @DisplayName("Execution of bubble sort ascending test")
+    @DisplayName("Execution of Bubble sort ascending test")
     @Test
     public void testSortAscending() {
         BubbleSort bubbleSort = new BubbleSort();
@@ -17,7 +17,7 @@ public class BubbleSortTest extends AbstractSortTest {
         Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
     }
 
-    @DisplayName("Execution of bubble sort descending test")
+    @DisplayName("Execution of Bubble sort descending test")
     @Test
     public void testSortDescending() {
         BubbleSort bubbleSort = new BubbleSort();

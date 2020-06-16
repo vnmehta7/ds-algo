@@ -1,8 +1,6 @@
 package sorting;
 
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class BubbleSort {
 
     public int[] sortAscending(int[] inputArr) {
@@ -11,6 +9,7 @@ public class BubbleSort {
                 if (inputArr[j] > inputArr[j + 1]) {
                     CommonUtil.swap(inputArr, j, j + 1);
                 }
+
             }
         }
         return inputArr;
