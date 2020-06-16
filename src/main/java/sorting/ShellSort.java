@@ -1,8 +1,5 @@
 package sorting;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public class ShellSort {
 
     public int[] sortAscending(int[] inputArr) {
