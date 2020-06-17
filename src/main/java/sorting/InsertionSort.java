@@ -3,7 +3,7 @@ package sorting;
 
 public class InsertionSort {
 
-    public int[] sortAscending(int[] inputArr) {
+    public void sortAscending(int[] inputArr) {
         for (int i = 1; i < inputArr.length; i++) {
             int newElement = inputArr[i];
             int j;
@@ -12,10 +12,9 @@ public class InsertionSort {
             }
             inputArr[j] = newElement;
         }
-        return inputArr;
     }
 
-    public int[] sortDescending(int[] inputArr) {
+    public void sortDescending(int[] inputArr) {
         for (int i = 1; i < inputArr.length; i++) {
             int newElement = inputArr[i];
             int j;
@@ -24,6 +23,5 @@ public class InsertionSort {
             }
             inputArr[j] = newElement;
         }
-        return inputArr;
     }
 }

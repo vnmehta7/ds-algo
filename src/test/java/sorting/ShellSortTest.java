@@ -12,15 +12,15 @@ public class ShellSortTest extends AbstractSortTest {
     @Test
     public void testSortAscending() {
         ShellSort shellSort = new ShellSort();
-        int[] sortedAscendingArrActual = shellSort.sortAscending(inputUnsortedArray);
-        Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
+        shellSort.sortAscending(inputArray);
+        Assert.assertTrue(Arrays.equals(inputArray, sortedAscendingArrExpected));
     }
 
     @DisplayName("Execution of Shell sort descending test")
     @Test
     public void testSortDescending() {
         ShellSort shellSort = new ShellSort();
-        int[] sortedDescendingArrActual = shellSort.sortDescending(inputUnsortedArray);
-        Assert.assertTrue(Arrays.equals(sortedDescendingArrActual, sortedDescendingArrExpected));
+        shellSort.sortDescending(inputArray);
+        Assert.assertTrue(Arrays.equals(inputArray, sortedDescendingArrExpected));
     }
 }

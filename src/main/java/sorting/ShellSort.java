@@ -2,7 +2,7 @@ package sorting;
 
 public class ShellSort {
 
-    public int[] sortAscending(int[] inputArr) {
+    public void sortAscending(int[] inputArr) {
         for (int gap = inputArr.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < inputArr.length; i++) {
                 int j = i;
@@ -14,10 +14,9 @@ public class ShellSort {
                 inputArr[j] = newElement;
             }
         }
-        return inputArr;
     }
 
-    public int[] sortDescending(int[] inputArr) {
+    public void sortDescending(int[] inputArr) {
         for (int gap = inputArr.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < inputArr.length; i++) {
                 int j = i;
@@ -29,6 +28,5 @@ public class ShellSort {
                 inputArr[j] = newElement;
             }
         }
-        return inputArr;
     }
 }

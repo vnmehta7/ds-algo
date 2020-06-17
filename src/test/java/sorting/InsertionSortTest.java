@@ -11,15 +11,15 @@ public class InsertionSortTest extends AbstractSortTest {
     @Test
     public void testSortAscending() {
         InsertionSort insertionSort = new InsertionSort();
-        int[] sortedAscendingArrActual = insertionSort.sortAscending(inputUnsortedArray);
-        Assert.assertTrue(Arrays.equals(sortedAscendingArrActual, sortedAscendingArrExpected));
+        insertionSort.sortAscending(inputArray);
+        Assert.assertTrue(Arrays.equals(inputArray, sortedAscendingArrExpected));
     }
 
     @DisplayName("Execution of Insertion sort descending test")
     @Test
     public void testSortDescending() {
         InsertionSort insertionSort = new InsertionSort();
-        int[] sortedDescendingArrActual = insertionSort.sortDescending(inputUnsortedArray);
-        Assert.assertTrue(Arrays.equals(sortedDescendingArrActual, sortedDescendingArrExpected));
+        insertionSort.sortDescending(inputArray);
+        Assert.assertTrue(Arrays.equals(inputArray, sortedDescendingArrExpected));
     }
 }

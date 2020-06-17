@@ -3,7 +3,7 @@ package sorting;
 
 public class BubbleSort {
 
-    public int[] sortAscending(int[] inputArr) {
+    public void sortAscending(int[] inputArr) {
         for (int i = inputArr.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (inputArr[j] > inputArr[j + 1]) {
@@ -12,10 +12,9 @@ public class BubbleSort {
 
             }
         }
-        return inputArr;
     }
 
-    public int[] sortDescending(int[] inputArr) {
+    public void sortDescending(int[] inputArr) {
         for (int i = inputArr.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (inputArr[j] < inputArr[j + 1]) {
@@ -23,6 +22,5 @@ public class BubbleSort {
                 }
             }
         }
-        return inputArr;
     }
 }
