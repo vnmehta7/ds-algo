@@ -10,12 +10,12 @@ public class BalanceBinaryTreeTest {
     @Test
     public void testNonBalancedTree() {
         BalanceBinaryTree tree = new BalanceBinaryTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
-        tree.root.left.left.left = new Node(8);
+        tree.root = new TreeNode(1);
+        tree.root.left = new TreeNode(2);
+        tree.root.right = new TreeNode(3);
+        tree.root.left.left = new TreeNode(4);
+        tree.root.left.right = new TreeNode(5);
+        tree.root.left.left.left = new TreeNode(8);
         Assert.assertFalse("Tree is not balanced", tree.isBalanced(tree.root));
     }
 
@@ -23,11 +23,11 @@ public class BalanceBinaryTreeTest {
     @Test
     public void testBalancedTree() {
         BalanceBinaryTree tree = new BalanceBinaryTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
+        tree.root = new TreeNode(1);
+        tree.root.left = new TreeNode(2);
+        tree.root.right = new TreeNode(3);
+        tree.root.left.left = new TreeNode(4);
+        tree.root.left.right = new TreeNode(5);
         Assert.assertTrue("Tree is  balanced", tree.isBalanced(tree.root));
     }
 }

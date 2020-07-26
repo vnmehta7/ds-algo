@@ -2,10 +2,10 @@ package tree;
 
 public class IsomorphicTree {
 
-    Node root1, root2;
+    TreeNode root1, root2;
 
     /* Given a binary tree, print its nodes in reverse level order */
-    boolean isIsomorphic(Node n1, Node n2) {
+    boolean isIsomorphic(TreeNode n1, TreeNode n2) {
         // Both roots are NULL, trees isomorphic by definition
         if (n1 == null && n2 == null)
             return true;

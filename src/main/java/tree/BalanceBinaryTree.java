@@ -1,24 +1,24 @@
 package tree;
 
 public class BalanceBinaryTree {
-    Node root;
+    TreeNode root;
 
-    boolean isBalanced(Node node) {
-        if (node == null) {
+    boolean isBalanced(TreeNode treeNode) {
+        if (treeNode == null) {
             return true;
         }
-        int lh = height(node.left);
-        int rh = height(node.right);
+        int lh = height(treeNode.left);
+        int rh = height(treeNode.right);
 
         return (Math.abs(lh - rh) <= 1
-                && isBalanced(node.left)
-                && isBalanced(node.right));
+                && isBalanced(treeNode.left)
+                && isBalanced(treeNode.right));
     }
 
-    int height(Node node) {
-        if (node == null) {
+    int height(TreeNode treeNode) {
+        if (treeNode == null) {
             return 0;
         }
-        return 1 + Math.max(height(node.left), height(node.right));
+        return 1 + Math.max(height(treeNode.left), height(treeNode.right));
     }
 }

@@ -1,11 +1,11 @@
 package tree;
 
-public class Node {
+public class TreeNode {
     int data;
-    Node left;
-    Node right;
+    TreeNode left;
+    TreeNode right;
 
-    Node(int d) {
+    TreeNode(int d) {
         data = d;
         left = right = null;
     }
