@@ -22,14 +22,3 @@ public class BalanceBinaryTree {
         return 1 + Math.max(height(node.left), height(node.right));
     }
 }
-
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int d) {
-        data = d;
-        left = right = null;
-    }
-}
